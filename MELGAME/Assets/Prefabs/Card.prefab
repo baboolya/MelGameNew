@@ -36,10 +36,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 336.0951, y: -49.982742}
-  m_SizeDelta: {x: 55.73, y: 78.54}
+  m_AnchorMin: {x: 0.39600003, y: 0.1695085}
+  m_AnchorMax: {x: 0.619, y: 0.82500005}
+  m_AnchoredPosition: {x: -5.5, y: 1}
+  m_SizeDelta: {x: -109.270004, y: -153.45999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &525144535143844807
 CanvasRenderer:
@@ -97,7 +97,6 @@ MonoBehaviour:
   _acceleration: 5
   _canvas: {fileID: 0}
   _image: {fileID: 3854557237439691629}
-  _spawnPosition: {fileID: 0}
 --- !u!50 &5928337140848131470
 Rigidbody2D:
   serializedVersion: 4

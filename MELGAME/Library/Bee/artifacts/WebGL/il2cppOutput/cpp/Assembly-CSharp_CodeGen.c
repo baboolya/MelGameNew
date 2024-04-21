@@ -127,7 +127,8 @@ extern void Target_SetSuit_m805214E6C2E43AB71E49E53CBA936E53547BBD72 (void);
 extern void Target_SetCanvas_mF0B41B4F24FCD4DD01C781959EDF43AB047E159F (void);
 extern void Target_GetValue_m1BC7F5D8853B9405C4FC6EA74234C14C69CE067C (void);
 extern void Target_GetSuit_m10A3A7D3A27B58A8D48FBFBB0722C5418601DA44 (void);
-static Il2CppMethodPointer s_methodPointers[115] = 
+extern void Target_RespawnOnBoard_mB31D436C0EFCA14DE1797E2AA5DE0173CED104C0 (void);
+static Il2CppMethodPointer s_methodPointers[116] = 
 {
 	InterTimer_Start_mA4BADB446563E9F1B46FF7A40935B732FF889AA8,
 	InterTimer_OnEnable_mBE029CDF3C039654AC0699944F7B71B7CE8C6B8A,
@@ -244,8 +245,9 @@ static Il2CppMethodPointer s_methodPointers[115] =
 	Target_SetCanvas_mF0B41B4F24FCD4DD01C781959EDF43AB047E159F,
 	Target_GetValue_m1BC7F5D8853B9405C4FC6EA74234C14C69CE067C,
 	Target_GetSuit_m10A3A7D3A27B58A8D48FBFBB0722C5418601DA44,
+	Target_RespawnOnBoard_mB31D436C0EFCA14DE1797E2AA5DE0173CED104C0,
 };
-static const int32_t s_InvokerIndices[115] = 
+static const int32_t s_InvokerIndices[116] = 
 {
 	4651,
 	4651,
@@ -362,12 +364,13 @@ static const int32_t s_InvokerIndices[115] =
 	3768,
 	4522,
 	4548,
+	4651,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	115,
+	116,
 	s_methodPointers,
 	0,
 	NULL,

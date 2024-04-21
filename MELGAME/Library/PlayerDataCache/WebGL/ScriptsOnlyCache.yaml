@@ -235,7 +235,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2106}
     - Class: 114
-      Script: {instanceID: 2572}
+      Script: {instanceID: 2470}
+    - Class: 114
+      Script: {instanceID: 2574}
     - Class: 114
       Script: {instanceID: 2968}
     - Class: 114
@@ -268,8 +270,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9136}
     - Class: 114
       Script: {instanceID: 9940}
-    - Class: 114
-      Script: {instanceID: 29130}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -393,6 +393,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime
     namespaceName: UnityEngine.U2D
     className: SpriteShapeDefaultCreator
+  - hash:
+      serializedVersion: 2
+      Hash: 7ac86154b32a94e9be96240fd1d9f94a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RewardTimer
   - hash:
       serializedVersion: 2
       Hash: 7e93247d600e115dac0cdd880de94e99
@@ -1341,14 +1347,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 7ac86154b32a94e9be96240fd1d9f94a
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: RewardTimer
   platform: 20
   scenePathNames:
   - Assets/Scenes/LoadGame.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/builds/MGFinal
+  playerPath: C:/builds/MGFFFFFF111

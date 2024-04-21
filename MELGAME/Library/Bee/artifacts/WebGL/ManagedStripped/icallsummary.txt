@@ -70,7 +70,9 @@ UnityEngine.Camera::ScreenPointToRay_Injected
 UnityEngine.Camera::ScreenToViewportPoint_Injected
 UnityEngine.Camera::ScreenToWorldPoint_Injected
 UnityEngine.Camera::SetupCurrent
+UnityEngine.Camera::ViewportToWorldPoint_Injected
 UnityEngine.Camera::WorldToScreenPoint_Injected
+UnityEngine.Camera::WorldToViewportPoint_Injected
 UnityEngine.Camera::get_pixelRect_Injected
 UnityEngine.Camera::get_current
 UnityEngine.Camera::get_main
@@ -645,6 +647,7 @@ UnityEngine.Transform::set_hasChanged
 UnityEngine.Transform::set_localPosition_Injected
 UnityEngine.Transform::set_localRotation_Injected
 UnityEngine.Transform::set_localScale_Injected
+UnityEngine.Transform::set_position_Injected
 UnityEngine.Transform::GetChild
 UnityEngine.Transform::GetParent
 UnityEngine.U2D.SpriteAtlas::CanBindTo

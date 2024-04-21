@@ -39090,6 +39090,7 @@ struct Target_t5A905B3F77364AD8D214E3B431FF3996D8CFA5B1  : public MonoBehaviour_
 	int32_t ____value;
 	String_t* ____suit;
 	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ____sprite;
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ____mainCamera;
 };
 struct TextGenerator_t6B84DC798596D3A9944DC346DD453C075EE62366  : public RuntimeObject
 {

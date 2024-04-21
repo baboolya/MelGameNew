@@ -11,7 +11,6 @@ namespace Source.Scripts.Objects
 
     public class Target : MonoBehaviour
     {
-        ///, IThrowable
         [SerializeField] private float _throwForce;
         [SerializeField] private float _speed;
         [SerializeField] private float _startSpeed;
@@ -39,6 +38,8 @@ namespace Source.Scripts.Objects
             _sprite = sprite;
         }
 
+        private Camera _mainCamera;
+ 
         private void Awake()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -46,6 +47,7 @@ namespace Source.Scripts.Objects
 
         private void Start()
         {
+            _mainCamera = Camera.main;
             _sprite = _image.sprite;
 
             CalculateRandomVector();
@@ -54,6 +56,13 @@ namespace Source.Scripts.Objects
 
         private void Update()
         {
+            Vector3 viewPos = _mainCamera.WorldToViewportPoint(transform.position);
+
+            if (viewPos.x < 0 || viewPos.x > 1 || viewPos.y < 0 || viewPos.y > 1)
+            {
+                RespawnOnBoard();
+            }
+
             _velocity = new Vector3(2f, 2f, 2f);
         }
 
@@ -113,6 +122,12 @@ namespace Source.Scripts.Objects
         public string GetSuit()
         {
             return _suit;
+        }
+
+        private void RespawnOnBoard()
+        {
+            Vector3 centerScreen = new Vector3(0.5f, 0.5f, _mainCamera.nearClipPlane + 1); 
+            transform.position = _mainCamera.ViewportToWorldPoint(centerScreen);
         }
     }
 }
